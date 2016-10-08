@@ -2,7 +2,8 @@ package newPackage;
  
 //import org.openqa.selenium.By;      
 import org.openqa.selenium.WebDriver;       
-import org.openqa.selenium.firefox.FirefoxDriver;       
+import org.openqa.selenium.firefox.FirefoxDriver;  
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;       
 import org.testng.annotations.Test; 
 import org.testng.annotations.BeforeTest;   
@@ -17,7 +18,7 @@ public class NoPOMClassTestLoginGuruBank {
         }   
         @BeforeTest
         public void beforeTest() {  
-            driver = new FirefoxDriver();  
+            driver = new ChromeDriver();  
         }       
         @AfterTest
         public void afterTest() {
